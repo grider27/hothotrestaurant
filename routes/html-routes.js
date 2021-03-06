@@ -6,8 +6,9 @@ module.exports = function(app){
 		res.sendFile(path.join(__dirname + '/../public/tables.html'));
 	});
 
-	app.get('/reserve.html', function(req, res){
-		res.sendFile(path.join(__dirname + '/../public/reservation.html'));
+
+	app.get('/reservation.html', function(req, res){
+    res.sendFile(path.join(__dirname + '/../public/reservation.html'));
 	});
 
 	app.use(function(req, res){
