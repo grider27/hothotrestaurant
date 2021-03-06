@@ -77,16 +77,16 @@
   $('#submitBtn').on('click', function () {
 
     var newReservation = {
-      name: $('#name').val().trim(),
-      phoneNum: $('#phoneNum').val().trim(),
-      email: $('#email').val().trim(),
-      uniqueId: $('#uniqueId').val().trim(),
+      customerName: $('#name').val().trim(),
+      customerEmail: $('#phoneNum').val().trim(),
+      customerID: $('#email').val().trim(),
+      phoneNumber: $('#uniqueId').val().trim(),
     };
 
     console.log(newReservation);
 
 
-    $.post('/api/tables.html', newReservation, function (data) {
+    $.post('/api/tables', newReservation, function (data) {
       if (data) {
         alert('Your table is booked');
       } else {
