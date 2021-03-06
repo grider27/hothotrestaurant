@@ -16,22 +16,20 @@
 <body>
   <div class="container">
     <!-- Content here top head ot the page -->
-    <header class="jumbotron mt-3 bg-light">
-      <p class="display-4 text-center">
+    <header class="jumbotron mt-3">
+      <div class="display-4 text-center">
         <i class="fas fa-fire-alt" i class="material-icons md-36">Hot Restaurant</i>
-      <h3 class="text-center">Current Reservation and Waiting List</h3>
-      </p>
-      <hr class="border-white" />
-      <div class="row pt-1">
-        <div class="text-center">
-
-          <a href="/tables.html"><button class="btn btn-lg btn-primary m-1" id="tablesBtn">
-              <i class="material-icons">View Tables</i>
-            </button></a>
-
-          <a href="index.html"><button class="btn btn-lg btn-info m-1" id="homeBtn">
-            <i class="fas fa-home"></i>
-            </button></a>
+        <h3>Current Reservation and Waiting List</h3>
+        <hr class="border-white" />
+        <div class="row pt-1">
+          <div class="col-12">
+            <a href="tables.html"><button class="btn btn-lg btn-primary m-1" id="tablesBtn">
+                <i class="material-icons">View Tables</i>
+              </button></a>
+            <a href="index.html"><button class="btn btn-lg btn-info m-1" id="homeBtn">
+                <i class="material-icons">Home</i>
+              </button></a>
+          </div>
         </div>
       </div>
     </header>
@@ -62,7 +60,7 @@
       </button>
     </form>
   </div>
-    <!-- add the api table links and api wait list-->
+  <!-- add the api table links and api wait list-->
   <footer class="footer">
     <div class="container">
       <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
@@ -98,10 +96,8 @@
       $('#email').val('');
       $('#uniqueId').val('');
     });
-  
+
   });
 
 
 </script>
-
-    
